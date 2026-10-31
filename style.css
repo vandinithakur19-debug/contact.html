@@ -1,0 +1,98 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: #afc2be;
+    color: #222;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.form-container {
+    width: min(480px, calc(100vw - 80px));
+    margin: 29px auto;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+h2 {
+    margin: 16px 0 18px;
+    border-bottom: 1px solid #087bff;
+    text-align: center;
+    font-size: 18px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    padding: 6px 10px;
+    border: 1px solid #cbd2d9;
+    border-radius: 4px;
+    background-color: #fff;
+    font-family: inherit;
+}
+
+input::placeholder {
+    color: #555;
+    opacity: 1;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-left: 4px;
+    font-size: 13px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.button-group {
+    display: flex;
+    gap: 5px;
+    margin-top: 21px;
+}
+
+.btn {
+    padding: 7px 16px;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn-reset {
+    background-color: #dc3545;
+}
+
+.btn-submit {
+    background-color: #28a745;
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: calc(100vw - 48px);
+        padding: 16px;
+    }
+}
